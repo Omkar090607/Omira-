@@ -1,0 +1,54 @@
+# Omira Voice Assistant - Requirements
+
+# Core dependencies
+pyttsx3==2.90
+pyaudio==0.2.13
+SpeechRecognition==3.10.0
+pywhatkit==5.4
+
+# UI Framework
+PyQt5==5.15.9
+
+# Web and API
+requests==2.31.0
+
+# AI/ML
+openai==1.12.0
+
+# Automation
+pyautogui==0.9.53
+
+# Data handling
+python-dotenv==1.0.0
+
+# Optional: Local AI support
+# ollama==0.1.21
+
+# Optional: Advanced audio
+# librosa==0.10.0
+
+# Added: name-based WhatsApp/Instagram sending (clipboard paste)
+pyperclip==1.8.2
+# Added: document builder feature ("write a document about X")
+python-docx==1.1.0
+# Added: brightness control
+screen-brightness-control==0.23.0
+# Added: precise volume-percent control (optional — falls back to key nudges if missing)
+pycaw==20240210
+comtypes==1.4.5
+# Required for the single Indian-accented voice (English/Hindi/Marathi).
+# Without these two, Omira silently falls back to Windows' built-in SAPI5
+# voice, which is why you were still hearing more than one voice.
+edge-tts==6.1.9
+playsound==1.2.2
+
+# For the OMIRA orb status feed (status_bridge.py). Optional — Omira runs
+# fine without it, it just won't be able to update the orb's visual state.
+websockets==12.0
+
+# Document summarizer (doc_summarizer.py) — PDF text extraction.
+pypdf==5.1.0
+
+# Packaging Omira as a desktop app with a tray icon (omira_app.py).
+pyinstaller==6.11.1
+
